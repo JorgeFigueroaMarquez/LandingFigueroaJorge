@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Contáctame, Jorge Andrés Figueroa Márquez, 00000228692-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame</title>
+</head>
+<body>
+    
+    <header>Contáctame
+        <img src="fotoHeader.jpg" width="30" height="40" style="float: left">
+      </header>
+      <hr />
+      <center>
+      <nav>
+      <p>Secciones</p>
+      <a href="index.html">Página principal</a> |
+      <a href="horario.html">Horario</a> |
+      <a href="descripcion.html">Descripción</a> |
+      <a href="aficiones.html">Aficiones</a> |
+      </nav>
+      </center>
+      <hr />
+
+      <form action="mailto:jorge.figueroa228692@potros.itson.edu.mx?subject=Contacto" method="post" enctype="text/plain">
+
+        <p>Contáctate conmigo</p>
+        <hr/>
+            <label for="nombreId">Nombre*: </label>
+            <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+            <br/>
+            <br/>
+            <label for="edadId">Edad: </label>
+            <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 />
+            <br/>
+            <br/>
+            <fieldset>
+                <legend>Carrera inscrito:</legend>
+                <input type="radio" id="electronica" name="carrera" value="Electronica" />
+                <label for="electronica" >Ingenier&iacute;a Electr&oacute;nica</label>
+                <br />
+                <input type="radio" id="industrial" name="carrera" value="Industrial" />
+                <label for="industrial" >Ingenier&iacute;a Industrial</label>
+                <br />
+                <input type="radio" id="software" name="carrera" value ="Software" />
+                <label for="industrial" >Ingenier&iacute;a en Software</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Semestre que cursas:</legend>
+                <input type="hidden" name="semestre" value="difusion" />
+
+                <select name="donde">
+                    <!-- Opciones del menú -->
+                    <option selected="selected">Primero</option> 
+                    <option>Segundo</option> 
+                    <option>Tercero</option> 
+                    <option>Cuarto</option>
+                    <option>Mayor a quinto</option>
+                </select>
+            </fieldset>
+            <br />
+
+            <fieldset align="left">
+                <legend>¿Consideras dificil la carrera?</legend>
+                <input type="checkbox" id="yes" name="si" 
+                       value="dificilCarrera" />
+                <label for="dificil" >Si</label>
+                <br />
+                <input type="checkbox" id="no" name="no" value="facilCarrera" />
+                <label for="facil" >No</label>
+            </fieldset>
+            <br />
+            <br />
+            <label for="emailId">E-mail*: </label>
+            <input type="text" id="nombreId" name="email" size=25 maxlenght=40 required />
+
+        <br />
+        <fieldset>
+            <legend>Háblame de ti:</legend>
+            <textarea name="comentario" rows="5" cols="80"></textarea>
+        </fieldset>
+        <br />
+
+        <div align="center" >
+            <input type="submit" name="boton" value="Enviar" />        
+            <input type="reset" value="Borrar" />
+        </div>
+
+
+      </form>
+
+      <footer>
+        <hr />
+        <p> Jorge Andrés Figueroa Márquez </p>
+        <a href="contactame.html">Contacto</a>
+    </footer>
+
+
+</body>
+</html>
